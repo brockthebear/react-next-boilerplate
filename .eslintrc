@@ -28,7 +28,7 @@
 			"except-parens"
 		],
 		"no-extra-parens": [
-			"all",
+			1,
 			{
 				"ignoreJSX": "all"
 			}
