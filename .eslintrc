@@ -10,13 +10,13 @@
 		"ecmaFeatures": {
 			"experimentalObjectRestSpread": true,
 			"impliedStrict": true,
-			"classes": true
+			"classes": true,
+			"jsx": true
 		}
 	},
 	"env": {
 		"browser": true,
 		"node": true,
-		"jquery": true,
 		"jest": true
 	},
 	"rules": {
@@ -26,6 +26,12 @@
 		"no-return-assign": [
 			"error",
 			"except-parens"
+		],
+		"no-extra-parens": [
+			"all",
+			{
+				"ignoreJSX": "all"
+			}
 		],
 		"no-restricted-syntax": [
 			2,
@@ -111,9 +117,14 @@
 		"prettier/prettier": [
 			"error",
 			{
+				"arrowParens": "avoid",
 				"trailingComma": "es5",
 				"singleQuote": true,
-				"printWidth": 100
+				"printWidth": 100,
+				"bracketSpacing": true,
+				"semi": true,
+				"tabWidth": 2,
+				"useTabs": true
 			}
 		],
 		"jsx-a11y/href-no-hash": "off",
