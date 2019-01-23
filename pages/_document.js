@@ -7,15 +7,14 @@ export default class MyDocument extends Document {
   // unique to Next.js (https://github.com/zeit/next.js/#custom-document)
   static getInitialProps({ renderPage }) {
     const sheet = new ServerStyleSheet();
-    const page = renderPage(App => props => sheet.collectStyles(<App {...props} />));
     const styleTags = sheet.getStyleElement();
-    return { ...page, styleTags };
+    return { styleTags };
   }
 
   render() {
     return (
       <html>
-        <Head>{this.props.styleTags}</Head>
+        <Head />
         <body>
           <Main />
           <NextScript />

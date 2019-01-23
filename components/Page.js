@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled, { ThemeProvider, injectGlobal } from 'styled-components';
 import Meta from './Meta';
 
-const theme = {
+export const theme = {
 	red: '#FF0000',
 	black: '#393939',
 	grey: '#3A3A3A',
@@ -56,8 +56,8 @@ class Page extends Component {
 			<ThemeProvider theme={theme}>
 				<StyledPage>
 					<Meta />
-					<Inner> {this.props.children} </Inner>{' '}
-				</StyledPage>{' '}
+					<Inner> {this.props.children} </Inner>
+				</StyledPage>
 			</ThemeProvider>
 		);
 	}
