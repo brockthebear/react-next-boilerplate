@@ -25,8 +25,8 @@ const Inner = styled.div`
 
 injectGlobal`
   @font-face {
-    font-family: 'radnika_next';
-    src: url('/static/radnikanext-medium-webfont.woff2') format('woff2');
+    font-family: 'Clear Sans';
+    src: url('/static/fonts/ClearSans-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
   }
@@ -42,7 +42,7 @@ injectGlobal`
     margin: 0;
     font-size: 1.5rem; /* 1.5rem = 15px. 1.5 * 10 (base font-size) = 15 */
     line-height: 2;
-    font-family: 'radnika_next';
+    font-family: 'Clear Sans';
   }
   a {
     text-decoration: none;
